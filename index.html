@@ -46,17 +46,25 @@ Simple Login Side
 </h1>
 
 <form name="login">
+
+<div>
 Username<input type="text" name="userid"/>
+</div>
+
+<div>
 Password<input type="password" name="passwd"/>
+</div>
 
 <input type="button" onclick="check(this.form)" value="Login"/> /*this one also, "check(this.form)", i don't know how to write it using ethernet shield /
 <input type="reset" value="Cancel"/>
 </form>
 
 <script language="javascript">
-function check(form)/function to check userid & password/ /this one, i don't know how to write it using ethernet shield/
+function check(form)/function to check userid & password/
 {
-/the following code checkes whether the entered userid and password are matching/
+
+
+<!-- the following code checkes whether the entered userid and password are matching -->
 if(form.userid.value == "test" && form.pswrd.value == "test")
  {
    /new page for controling motor/
