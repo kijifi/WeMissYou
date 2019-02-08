@@ -124,7 +124,8 @@ function check(form)//function to check userid & password/
 {
 	var logindata=form.userid.value + " " + form.passwd.value;
 	//document.getElementById("debug").innerHTML = data;
-	data(logindata);
+	 var data = stringToBytes(logindata);
+	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
 
 
