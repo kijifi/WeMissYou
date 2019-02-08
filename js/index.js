@@ -120,17 +120,13 @@ function onError(reason)  {
 }
 
 
-function login(form){
-
-// the following code checkes whether the entered userid and password are matching/
-if(form.userid.value == "test" && form.passwd.value == "test"){
-   // new page for controling motor/
-}
-else
+function check(form)//function to check userid & password/
 {
-  alert("Incorrect Password or Username")// displays error message
- }
+	var logindata=form.userid.value + " " + form.passwd.value;
+	//document.getElementById("debug").innerHTML = data;
+	data(logindata);
 }
+
 
 
 
